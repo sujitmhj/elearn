@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+    Item Name: Materialize - Material Design Admin Template
+    Version: 2.1
+    Author: GeeksLabs
+    Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Meroanser | Dashboard</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="cyan">
+                <div class="nav-wrapper">                    
+                    
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Meroanswer</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Meroanswer"/>
+                    </div>
+                    <ul class="right hide-on-med-and-down">                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-navigation-apps"></i></a>
+                        </li>                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-notifications"></i></a>
+                        </li>                        
+                        <li><a href="app-widget.html#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+                <div class="row">
+                    <div class="col col s4 m4 l4">
+                        <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    </div>
+                    <div class="col col s8 m8 l8">
+                        <ul id="profile-dropdown" class="dropdown-content">
+                            <li><a href="app-widget.html#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-action-settings"></i> Settings</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-communication-live-help"></i> Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="app-widget.html#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="app-widget.html#" data-activates="profile-dropdown">David Silwal<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                        <p class="user-roal">Engineering</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+
+            
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
+            </li>
+
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-communication-forum"></i> Forum <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-hardware-gamepad"></i> Games <span class="new badge">4</span></a>
+            </li>   
+               <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-image-wb-incandescent"></i> General Tricks</a>
+              </li>
+               <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-social-mood"></i> Science Jokes</a>
+              </li>
+            
+            
+        </ul>
+        <a href="app-widget.html#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+      </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">
+
+        <!--start container-->
+        <div class="container">
+          <div class="section">
+
+           
+            <!--card stats start-->
+            <div class="seaction">
+              <h4 class="header">Prepare</h4>
+              <p> Read notes, attend virtual classroom and update you knowledge.</p>
+              <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content  green white-text">
+                                       <h5 class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i>Physics</h5>
+                                        <h6 class="card-stats-number">52% prepared</h6>
+                                       <button class="btn waves-effect light-green " type="submit" name="action">Start Now
+                        <i class="mdi-content-send right"></i>
+                      </button>
+                                    </div>
+                                    <div class="card-action  green darken-2">
+                                        <div id="clients-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content purple white-text">
+                                        <h5 class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i>Chemistry</h5>
+                                        <h6 class="card-stats-number">52% prepared</h6>
+                                       <button class="btn waves-effect purple lighten-2 " type="submit" name="action">Start Now
+                        <i class="mdi-content-send right"></i>
+                      </button>
+                                    </div>
+                                    <div class="card-action purple darken-2">
+                                        <div id="sales-compositebar"></div>
+
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content blue-grey white-text">
+                                        <h5 class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Mathematics</h5>
+                                        <h6 class="card-stats-number">25% prepared</h6>
+                                        <button class="btn waves-effect grey lighten-1 " type="submit" name="action">Start Now
+                        <i class="mdi-content-send right"></i>
+                      </button>
+                                    </div>
+                                    <div class="card-action blue-grey darken-2">
+                                        <div id="profit-tristate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content deep-purple white-text">
+                                        <h5 class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Biology</h5>
+                                        <h6 class="card-stats-number">67% prepared</h6>
+                                       <button class="btn waves-effect deep-purple lighten-3 " type="submit" name="action">Start Now
+                        <i class="mdi-content-send right"></i>
+                      </button>
+                                    </div>
+                                    <div class="card-action  deep-purple darken-2">
+                                        <div id="invoice-line"></div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+            </div>
+            <!--card stats end-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="divider"></div>
+            <!--chart dashboard start-->
+            <div class="seaction">
+              <h4 class="header">Practice</h4>
+              <p>Try out model entrance exams </p>
+               <div class="row">
+                <div class="col s12 m12 l12">
+                  <ul id="projects-collection" class="collection">
+                  
+                    <li class="collection-item">
+                      <div class="row">
+                        <div class="col s6">
+                          <p class="collections-title">IOE Entrance Examination</p>
+                          <p class="collections-content">Tribhuvan University</p>
+                        </div>
+                        <div class="col s3">
+                          <span class="task-cat cyan">Details</span>
+                        </div>
+                        <div class="col s3">
+                          <div id="project-line-1"></div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                     <li class="collection-item">
+                      <div class="row">
+                        <div class="col s6">
+                          <p class="collections-title">IOM Entrance Examination</p>
+                          <p class="collections-content">Tribhuvan University</p>
+                        </div>
+                        <div class="col s3">
+                          <span class="task-cat cyan">Details</span>
+                        </div>
+                        <div class="col s3">
+                          <div id="project-line-2"></div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                     <li class="collection-item">
+                      <div class="row">
+                        <div class="col s6">
+                          <p class="collections-title">MoE Entrance Examination</p>
+                          <p class="collections-content">Tribhuvan University</p>
+                        </div>
+                        <div class="col s3">
+                          <span class="task-cat cyan">Details</span>
+                        </div>
+                        <div class="col s3">
+                          <div id="project-line-3"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                     <li class="collection-item">
+                      <div class="row">
+                        <div class="col s6">
+                          <p class="collections-title">KU Entrance Examination</p>
+                          <p class="collections-content">Kathmandu University</p>
+                        </div>
+                        <div class="col s3">
+                          <span class="task-cat cyan">Details</span>
+                        </div>
+                        <div class="col s3">
+                          <div id="project-line-4"></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+  
+              </div>
+            </div>
+            <!--chart dashboard end-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="divider"></div>
+            <!--card widgets start-->
+            <div id="card-widgets" class="seaction">
+              <div class="row">
+
+              
+                <div class="col s12 m12 l8">
+                    <h4 class="header">Hot Questions</h4>
+                    <ul id="issues-collection" class="collection">
+                                    <li class="collection-item">
+                                        <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Filter by subject</option>
+                      <option value="1">Physics</option>
+                      <option value="2">Chemistry</option>
+                      <option value="3">Mathematics</option>
+                      <option value="3">Biology</option>
+                    </select>
+                  </div>
+                                    </li>
+                                    <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s8">
+                                                <p class="collections-title"><strong>#Q102</strong> A body is cooled from 100∘C to 80∘C in t1 sec, to 60∘C in t2 sec, and  60∘C to   40∘C  in t3 sec, then t1,t2, and t3 are related as
+
+A.  t1>t2>t3
+B. t1<t2<t3
+C. t3<t2<t1
+D. t1=t2=t3</p>
+<p>
+                                                <span class="task-cat teal">heat</span>
+                                                <span class="task-cat teal">thermodynamics</span>
+                                                </p>
+                                            </div>
+                                            <div class="col s2">
+                                                <span class="task-cat pink accent-2">4/25 a/v</span>
+                                            </div>
+                                            <div class="col s2">
+                                               <a class="waves-effect waves-light  btn">view</a>                                         
+                                            </div>
+                                        </div>
+                                    </li>
+                                <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s8">
+                                                <p class="collections-title"><strong>#Q102</strong> A body is cooled from 100∘C to 80∘C in t1 sec, to 60∘C in t2 sec, and  60∘C to   40∘C  in t3 sec, then t1,t2, and t3 are related as
+
+A.  t1>t2>t3
+B. t1<t2<t3
+C. t3<t2<t1
+D. t1=t2=t3</p>
+<p>
+                                                <span class="task-cat teal">heat</span>
+                                                <span class="task-cat teal">thermodynamics</span>
+                                                </p>
+                                            </div>
+                                            <div class="col s2">
+                                                <span class="task-cat pink accent-2">4/25 a/v</span>
+                                            </div>
+                                            <div class="col s2">
+                                               <a class="waves-effect waves-light  btn">view</a>                                         
+                                            </div>
+                                        </div>
+                                    </li>
+                        <li class="collection-item">
+                                        <div class="row">
+                                            <div class="col s8">
+                                                <p class="collections-title"><strong>#Q102</strong> A body is cooled from 100∘C to 80∘C in t1 sec, to 60∘C in t2 sec, and  60∘C to   40∘C  in t3 sec, then t1,t2, and t3 are related as
+
+A.  t1>t2>t3
+B. t1<t2<t3
+C. t3<t2<t1
+D. t1=t2=t3</p>
+<p>
+                                                <span class="task-cat teal">heat</span>
+                                                <span class="task-cat teal">thermodynamics</span>
+                                                </p>
+                                            </div>
+                                            <div class="col s2">
+                                                <span class="task-cat pink accent-2">4/25 a/v</span>
+                                            </div>
+                                            <div class="col s2">
+                                               <a class="waves-effect waves-light  btn">view</a>                                         
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                </div>
+
+
+                  <div class="col s12 m4 l4">
+                  <h4 class="header">My schedule</h4>
+                  <ul id="task-card" class="collection with-header">
+                    <li class="collection-header cyan">
+                      <h4 class="task-card-title">To dos</h4>
+                      <p class="task-card-date">September 26, 2015</p>
+                    </li>
+                    <li class="collection-item dismissable">
+                      <input type="checkbox" id="task1" />
+                      <label for="task1"> Practice model exam of IOE <a href="app-widget.html#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                      </label>
+                      <span class="task-cat teal">Important</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                      <input type="checkbox" id="task2" />
+                      <label for="task2">Revise electricity and Magnetism <a href="app-widget.html#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                      </label>
+                      <span class="task-cat purple">If got time</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                      <input type="checkbox" id="task3" checked="checked" />
+                      <label for="task3">Complete Assignment of Permutation and Combintation <a href="app-widget.html#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                      </label>
+                      <span class="task-cat pink">Complete</span>
+                    </li>
+                    <li class="collection-item dismissable">
+                      <input type="checkbox" id="task4" checked="checked" disabled="disabled" />
+                      <label for="task4">Attend virtual classroom for Thermometry</label>
+                      <span class="task-cat cyan">High</span>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+              
+       
+            </div>
+            <!--card widgets end-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="divider"></div>
+            
+
+          </div>
+        </div>
+        <!--end container-->
+
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START RIGHT SIDEBAR NAV-->
+      <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="app-widget.html#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            <div id="right-search" class="row">
+                <form class="col s12">
+                    <div class="input-field">
+                        <i class="mdi-action-search prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                    </div>
+                </form>
+            </div>
+            </li>
+            <li class="li-hover">
+                <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">just now</a>
+                                <p>Jim Doe Purchased new equipments for zonal office.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">Yesterday</a>
+                                <p>Your Next flight for USA will be on 15th August 2015.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">Last Week</a>
+                                <p>Jessy Jay open a new store at S.G Road.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                    <div class="collapsible-body sales-repoart">
+                        <div class="sales-repoart-list  chat-out-list row">
+                            <div class="col s8">Target Salse</div>
+                            <div class="col s4"><span id="sales-line-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Payment Due</div>
+                            <div class="col s4"><span id="sales-bar-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Delivery</div>
+                            <div class="col s4"><span id="sales-line-2"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Progress</div>
+                            <div class="col s4"><span id="sales-bar-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                    <div class="collapsible-body favorite-associates">
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Eileen Sideways</p>
+                                <p class="place">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Zaham Sindil</p>
+                                <p class="place">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Renov Leongal</p>
+                                <p class="place">Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Weno Carasbong</p>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Nusja Nawancali</p>
+                                <p class="place">Bangkok, Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </li>
+        </ul>
+      </aside>
+      <!-- LEFT RIGHT SIDEBAR NAV-->
+
+    </div>
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank">Phunka Technologies Pvt. Ltd.</a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://phunka.com/">Phunka Technologies Pvt. Ltd.</a></span>
+        </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+    <!-- chartjs -->
+    <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
+    
+    <!-- sparkline -->
+    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
+
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+    <script type="text/javascript">
+    $(".card-content").on("click","button",function(){
+        window.location = "subject-page.html";
+    });
+    </script>
+</body>
+
+</html>

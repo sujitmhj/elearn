@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title></title>
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>
+<div style="font-size:50px;">
+<script type="text/javascript">
+var start_value = parseInt("e600",16);
+var end_value = parseInt("e8e4",16);
+for(var i =start_value;i<end_value+1;i++)
+{
+	document.write("<p class='mdi-action-dashboard' style='font-size:100px;'>"+ String.fromCharCode(i)+"</p>"+ i.toString(16) +"<br/>");
+}
+</script>
+</div>
+</body>
+</html>

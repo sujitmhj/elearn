@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+    Item Name: Materialize - Material Design Admin Template
+    Version: 2.1
+    Author: GeeksLabs
+    Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Physics Preparation</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom-style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+  <style>
+      #map {
+        height: 100%;
+      }
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+    </style>
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="cyan">
+                <div class="nav-wrapper">                    
+                    
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Meroanswer</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize"/>
+                    </div>
+                    <ul class="right hide-on-med-and-down">                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light content_fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-navigation-apps"></i></a>
+                        </li>                        
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-notifications"></i></a>
+                        </li>                        
+                        <li><a href="app-widget.html#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Compose Email Trigger -->
+            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+              <a class="btn-floating btn-medium blue modal-trigger" href="#modal1">
+                <i class="large mdi-action-settings"></i>
+              </a>
+            </div>
+
+
+
+
+            <!-- Compose Email Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+      <div class="col s12 m8 l9">
+                <h4>What do you like to see ?</h4>
+                  <form action="form-elements.html#">
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_derivations" checked="checked" />
+                      <label for="show_derivations">Show Derivations</label>
+                    </p>
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_formula" checked="checked" />
+                      <label for="show_formula">Show Formula</label>
+                    </p>
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_interactive_contents" checked="checked" />
+                      <label for="show_interactive_contents">Show Interactive contents</label>
+
+                    </p>
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_videos" checked="checked" />
+                      <label for="show_videos">Show Videos</label>
+
+                    </p>
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_shortcuts" checked="checked" />
+                      <label for="show_shortcuts">Show Shortcuts</label>
+                    </p>
+                    <p>
+                      <input type="checkbox" class="notes_setting" id="show_mnemonics" checked="checked" />
+                      <label for="show_mnemonics">Show Mnemonics to Remember</label>
+
+                    </p>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+                <div class="row">
+                    <div class="col col s4 m4 l4">
+                        <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                    </div>
+                    <div class="col col s8 m8 l8">
+                        <ul id="profile-dropdown" class="dropdown-content">
+                            <li><a href="app-widget.html#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-action-settings"></i> Settings</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-communication-live-help"></i> Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="app-widget.html#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                            </li>
+                            <li><a href="app-widget.html#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="app-widget.html#" data-activates="profile-dropdown">Sujit Maharjan<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                        <p class="user-roal">Instructor</p>
+                    </div>
+                </div>
+            </li>
+            <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> CSS</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="css-typography.html">Typography</a>
+                                </li>                                        
+                                <li><a href="css-icons.html">Icons</a>
+                                </li>
+                                <li><a href="css-shadow.html">Shadow</a>
+                                </li>
+                                <li><a href="css-media.html">Media</a>
+                                </li>
+                                <li><a href="css-sass.html">Sass</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-palette"></i> UI Elements</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="ui-buttons.html">Buttons</a>
+                                </li>
+                                <li><a href="ui-badges.html">Badges</a>
+                                </li>
+                                <li><a href="ui-cards.html">Cards</a>
+                                </li>
+                                <li><a href="ui-collections.html">Collections</a>
+                                </li>
+                                <li><a href="ui-accordions.html">Accordian</a>
+                                </li>
+                                <li><a href="ui-tabs.html">Tabs</a>
+                                </li>
+                                <li><a href="ui-navbar.html">Navbar</a>
+                                </li>
+                                <li><a href="ui-pagination.html">Pagination</a>
+                                </li>
+                                <li><a href="ui-preloader.html">Preloader</a>
+                                </li>
+                                <li><a href="ui-modals.html">Modals</a>
+                                </li>
+                                <li><a href="ui-media.html">Media</a>
+                                </li>
+                                <li><a href="ui-toasts.html">Toasts</a>
+                                </li>
+                                <li><a href="ui-tooltip.html">Tooltip</a>
+                                </li>
+                                <li><a href="ui-waves.html">Waves</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold active"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i> Widgets <span class="new badge"></span></a>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="table-basic.html">Basic Tables</a>
+                                </li>
+                                <li><a href="table-data.html">Data Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="form-elements.html">Form Elements</a>
+                                </li>
+                                <li><a href="form-layouts.html">Form Layouts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="page-contact.html">Contact Page</a>
+                                </li>
+                                <li><a href="page-todo.html">ToDos</a>
+                                </li>
+                                <li><a href="page-blog-1.html">Blog Type 1</a>
+                                </li>
+                                <li><a href="page-blog-2.html">Blog Type 2</a>
+                                </li>
+                                <li><a href="page-404.html">404</a>
+                                </li>
+                                <li><a href="page-500.html">500</a>
+                                </li>
+                                <li><a href="page-blank.html">Blank</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-shopping-cart"></i> eCommers</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="eCommerce-products-page.html">Products Page</a>
+                                </li>                                        
+                                <li><a href="eCommerce-pricing.html">Pricing Table</a>
+                                </li>
+                                <li><a href="eCommerce-invoice.html">Invoice</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-image-image"></i> Medias</a>
+                        <div class="collapsible-body">
+                            <ul>                                        
+                                <li><a href="media-gallary-page.html">Gallery Page</a>
+                                </li>
+                                <li><a href="media-hover-effects.html">Image Hover Effects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> User</a>
+                        <div class="collapsible-body">
+                            <ul>     
+                                <li><a href="user-profile-page.html">User Profile</a>
+                                </li>                                   
+                                <li><a href="user-login.html">Login</a>
+                                </li>                                        
+                                <li><a href="user-register.html">Register</a>
+                                </li>
+                                <li><a href="user-forgot-password.html">Forgot Password</a>
+                                </li>
+                                <li><a href="user-lock-screen.html">Lock Screen</a>
+                                </li>                                        
+                                <li><a href="http://demo.geekslabs.com/materialize/v2.1/layout01/user-session-timeout.html">Session Timeout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="charts-chartjs.html">Chart JS</a>
+                                </li>
+                                <li><a href="charts-chartist.html">Chartist</a>
+                                </li>
+                                <li><a href="charts-morris.html">Morris Charts</a>
+                                </li>
+                                <li><a href="charts-xcharts.html">xCharts</a>
+                                </li>
+                                <li><a href="charts-flotcharts.html">Flot Charts</a>
+                                </li>
+                                <li><a href="charts-sparklines.html">Sparkline Charts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+            <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
+            </li>
+            <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
+            </li>
+            <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
+            </li>
+            <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
+            </li>                    
+            <li class="li-hover"><div class="divider"></div></li>
+            <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
+            <li class="li-hover">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="sample-chart-wrapper">                            
+                            <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="app-widget.html#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+      </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="presentation_frame" style="overflow:auto;">
+
+        <!--start container-->
+        <div class="container">
+          <div class="section">
+
+           
+            <!--card stats start-->
+            <div class="seaction" id="table-datatables">
+          <div class="row">
+                            <div class="col s12 m12 l12">
+                            
+                  <h5>Newton's Law of Gravitation</h5>
+                  <div class="content_derivation">
+                      <p>It states that any two particles on the universe attract each other with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.<br/></br>
+If the distance between two particles of masses M1 and M2 be r, the gravitational force (F) is given by :
+<br/>
+F $\propto \frac{m_1 m_2}{r^2}$
+<br/>
+or, F = $\frac{G m_1 m_2}{r^2}$
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>F = $\frac{G m_1 m_2}{r^2}$</p>
+</div>
+
+  <!-- style="background:rgba(209, 240, 235, 0.62); padding-top:10px;" -->
+<div class="container content_interactive">
+<div class="row">
+<div class="col s12" style="text-align:center;">
+<ul class="tabs tab-demo-active  z-depth-1 cyan">
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light active" href="ui-tabs.html#sapien1"><i class="mdi-image-slideshow"></i> Experiment</a>
+                      </li>
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light" href="ui-tabs.html#activeone1"><i class="mdi-action-accessibility"></i> Exercises</a>
+                      </li>
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light" href="ui-tabs.html#vestibulum1"><i class="mdi-action-help"></i> Help</a>
+                      </li>
+                    </ul>
+
+</div>
+
+<div class="col s12">
+                    <div id="sapien1" class="col s12 white lighten-3 center" style="padding-top:20px;padding-bottom:20px;">
+                      <canvas id="myCanvas" width="800" height="200" style=";background:#ffffff;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+                <div class="col s12">
+                  <div class="col s3 offset-s2 input-field">
+                  <h6>Mass 1 (m1) kg</h6>
+                  <input type="number" value="1000" class="input_mass" maxlength="6" id = "m1">
+                  </div>
+
+                  <div class="col s3 offset-s2 input-field">
+                  <h6>Mass 2 (m2)kg</h6>
+<input type="number" value="1000" class="input_mass" maxlength="6" id = "m2">
+                  </div>
+                  </div>
+
+                    </div>
+                    <div id="activeone1" class="col s12  white lighten-3">
+                    <h4>Questions</h4>
+                      <p>1. Move the mass 1 (m1) and mass 2 (m2) to see how the value of gravitational force (F) varies with distance between m1 and m2.</p>
+                        <p>2. Keep the distance between m1 and m2 constant, change mass of m1 and m2 and see how the gravitational force (F) changes.</p>
+                    </div>
+                    <div id="vestibulum1" class="col s12  white lighten-3">
+                      <p>m1 -> mass of object 1</p>
+                      <p>m2 -> mass of object 2</p>
+                      <p>d -> Distance between m1 and m2</p>
+                      <p>F -> Gravitational force between m1 and m2</p>
+                      <a href="#">Still confused ?</a>
+                    </div>
+                  </div>
+
+
+
+
+<!-- <div class="col s1">
+              <a class="btn-floating btn-medium blue modal-trigger" href="#modal1">
+                <i class="mdi-action-help blue"></i>
+              </a>
+            </div> -->
+
+
+                  </div>
+                  </div>
+
+<div class="content_derivation">
+
+<p>
+The constant of proportionality (G) is gravitational constant and its value G = 6.67 $\times 10^{-11} Nm^2kg^{-2}$. This constant has the same value everywhere in the universe hance G is also called universal gravitational constant. The dimensions of G $ [M^{-1}L^3T^{-2}]$ <br/>
+
+It should be noted that gravitational force between two particle doesn't depends on presence of other particles and property of intervening medium.</p><br/>
+</div>
+                    
+                  <h5>Acceleration due to gravity (g)</h5>
+                  <div class="content_derivation">
+                      <p>
+The acceleration produced in a body by the force due to gravity is called acceleration due to gravity and is denoted by g.<br/>
+
+If m be the mass of a body. Force due to gravity (F) is given by F = mg.
+<br/>
+
+Let M be the mass of earth and R be its radius the force on a body of mass m at earth surface is 
+<br/>
+
+F = $\frac{GMm}{R^2}$
+<br/>
+or, $mg = \frac{GMm}{R^2}$
+<br/>
+or, $g = \frac{GM}{R^2}$
+<br/>
+
+The above expression shows that value of g depends on the distance of body from the centre of earth. If r be the distance of the body from the centre of earth.
+<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$ g' = \frac{GM}{r^2} $
+</p>
+</div>
+                    
+                  <h5>Variation of g</h5>
+<div class="content_derivation">                  
+                      <p>
+                      <b>a) With altitude (height)</b><br/>
+Let acceleration due to gravity at earth surface and at height (h) from earth surface be g and g' respectively. Then
+<br/>
+$g = \frac{GM}{R^2}$
+<br/>
+and, $g' = \frac{GM}{(R+h)^2}$
+<br/>
+
+Dividing,
+<br/>
+$\frac{g'}{g} = \frac{R^2}{(R+h)^2}$
+<br/>
+
+if h << R,<br/>
+
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$g' = g(1-\frac{2h}{R})$
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+
+<br/>
+<b>b) With depth (d)</b><br/>
+Let us assume the earth has uniform density ($\rho$). then,<br/>
+Mass = Volume $\times$ density<br/>
+or $M = \frac{4}{3}\pi r^3 \times \rho$<br/>
+or $M = \frac{4}{3}\pi r^3  \rho$<br/>
+then, $ g = \frac{GM}{r^2}$<br/>
+or, $ g = \frac{G}{r^2}\times\frac{4}{3}\pi r^3 \rho$<br/>
+or, $g = \frac{4}{3} \pi G r \rho$<br/>
+
+hence inside earth, g varies directly with r (distance from center or earth) <br/>
+
+Let g' be the acceleration due to gravity at a depth d. then <br/>
+
+$\frac{g'}{g} = \frac{R-d}{R}$<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$g' = g(1 - \frac{d}{R})$<br/>
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+This equation shows the variation of g with depth.<br/>
+
+Weight of body at the center of earth at the center of earth d = R <br/>
+$g' = g(1 - \frac{R}{R})$ <br/>
+
+or, $g' = g \times 0)<br/>
+= 0$<br/>
+
+Hence, weight of body at the center of the earth is zero.<br/>
+
+
+<b>c) Variation of g with the rotation of earth</b><br/>
+Due to rotation of earth, the effective value of g decreases. The effective value of acceleration due to gravity at any latitude of angle $ \theta $ is <br/>
+
+$ g' = g - \omega ^2 R cos^2\theta $<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$g'= g - (\frac{2\pi}{T})^2Rcos^2\theta $<br/>
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+where T is the time period of rotation of earth (T=24 hour).<br/>
+
+The effective weight of mass m is <br/>
+
+$ w = mg - m\omega ^2 R cos^2\theta $<br/>
+
+At pole,<br/>
+
+$ \theta = 90 ^o $ thus $ g' = g $<br/>
+
+At equator, <br/>
+
+$ \theta = 0^ o, so, cos\theta =1 $<br/>
+
+Therefore, the decrease in g is maximum at equator and zero at poles. Change in the weight of body when taken from equation to pole $ = m \omega ^2 R $ <br/>
+
+<b>d) Variation of g due to shape of the earth</b><br/>
+The earth is bulging at the equator and flattened at the poles. As varies inversely with square of radius, the value of g increases from equator to poles. ie g is maximum at pole and minimum at the euator.
+<br/>
+                      </p>
+
+
+</div>
+<div class="content_interactive">
+<canvas id = "content_variation_g" width="800" height="300"   style="background:rgba(209, 240, 235, 0.62);">
+    Not able to display
+</canvas>
+
+</div>
+
+                      <div class="content_interactive col s12 m12 l12" style="height:600px;">
+                       <input id="pac-input" class="controls" type="text"
+        placeholder="Enter a location">
+    <div id="map" height="600"></div>
+                      </div>
+                  <h5>Gravitational field strength</h5>
+<div class="content_derivation">  
+                      <p>The gravitation field strength at any point in gravitational field is the gravitational force experienced by a unit mass placed at that point.<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+
+$ \vec{E} = \frac{\vec{F}}{m} = \frac{GMm}{r^2m} = \frac{GM}{r^2} $
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+Gravitational field strength is a vector quantity whose dimensions are same as acceleration.</p>
+
+</div>
+
+
+                  <h5>Gravitational potential</h5>
+                  <div class="content_derivation">  
+                      <p>Gravitational potential at any point in a gravitational field is defined as the work done in taking a unit mass from infinity to that point. The gravitation potential due to mass M at a distance r i given by.<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+
+$V = -\frac{GM}{r}$</p>
+</p>
+</div>
+<div class="content_derivation"> 
+
+</div>
+
+                  <h5>Gravitational potential energy </h5>
+                  <div class="content_derivation">  
+                      <p>The gravitational potential energy of a system of masses is defined as the amount of work done to assemble this system of masses by bringing them in from an infinite distance. The gravitational potential energy of mass M at the distance r from centre of earth is<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$ U = -\frac{GMm}{r} $
+</p>
+</div>
+<p>
+
+
+                  <h5>Motion of satellite</h5>
+                  <div class="content_derivation">  
+                      <p>Consider a satellite of mass m revolving round the earth at the radius r with velocity $V_o$. The necessary centripetal force is provided by the gravitational force between satellite and earth.<br/>
+
+$\frac{mV_o}{r} = \frac{GMm}{r^2}$
+<br/>
+or, $V_o = \sqrt{\frac{GM}{r}} $
+<br/>
+If the satellite is at the height h from earth surface.<br/>
+
+
+
+
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$ V_o = \sqrt{\frac{GM}{R+h}} $<br/>
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+
+
+We have, $ GM = gR^2 $
+<br/>
+$ V_o = R\sqrt{\frac{g}{R+h}} $
+<br/>
+The satellite is near to earth surface $ R + h \approx R $, Hence, orbital velocity of such satellite is given by <br/>
+$ V_o = \sqrt{gR} $<br/>
+$\approx 8km/sec $
+
+
+
+
+
+</p>
+</div>
+                    
+
+
+                  <h5>Time period (T) of a satellite</h5>
+                  <div class="content_derivation">  
+                      <p>
+
+$ T = \frac{2\pi r}{V_o} $<br/>
+or, $T = \frac{2 \pi r}{\sqrt{GM/r}}$<br/>
+or, $ T^2 = \frac{4 \pi^2r^3}{GM}$<br/>
+or $ T^2 = (\frac{4 \pi^2}{GM})r^3 $<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$ so, T^2 \propto r^3 $<br/>
+</p>
+</div>
+<div class="content_derivation"> 
+<p>
+
+The above relation suggests that square of time period of satellite is directly proportional to the cube of the radius of the orbit. This is infact kepler's III law. Now, lets talk about the energy of the satellite, obviously, satellite in its orbit has both kinetic and potential energy. We will shortly see the magnitudes of such energies and their relationship.</p>
+</div>
+                    
+
+
+                  <h5>Kinetic and potential energy of satellite</h5>
+                  <div class="content_derivation">  
+                      <p>$E_k = \frac{1}{2}mV_o  = \frac{GMm}{2(R+h)}$
+<br/>
+Potential energy of satellite
+<br/>
+
+$V = \frac{-GMm}{R+h}$
+<br/>
+
+Total energy of satellite
+<br/>
+$E_r = $ Kinetic energy + potential energy<br/>
+$ = \frac{GMm}{2(R+h)} -\frac{GMm}{(R+h)}$<br/>
+$ = -\frac{GMm}{2(R+h)} $<br/>
+
+The total energy of satellite is found to be negative, the negative sign indicates satellite is bound.
+<br/>
+From above, following relationship can easily be deduced.
+<br/>
+$2E_k = -U$
+<br/>
+$E_k = -E_r $
+<br/>
+
+
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$U = 2E_r$
+</p>
+</div>
+    
+
+
+                  <h5>Escape Velocity</h5>
+                 
+                  <div class="content_derivation">  
+                      <p>It is the least velocity with which a body must be projected upward so that it may just escape the gravitational field of the earth.
+<br/>
+Abody can escape from gravitation pull, if energy equal to its potential energy provided in the form of kinetic energy.
+<br/>
+$\frac{1}{2}mv_e^2 = \frac{GMm}{R}$<br/>
+or, $v_e = \sqrt{\frac{2GM}{R}}$<br/>
+</p>
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$ = \sqrt{2gR} $<br/>
+</p>
+</div>
+
+
+<div class="content_derivation"> 
+<p>
+= 11.2km/s<br/>
+
+
+Atmosphere on a planet can exist if the root mean square velocity of gas molecules less than escape velocity of that planet.
+</p>
+
+                    
+                    </div>
+                     <div class="content_interactive">
+                  <iframe src="http://highered.mheducation.com/sites/dl/free/0072482621/78778/Escape_Nav.swf" height="600" width="800"></iframe>
+                  </div>
+
+
+
+                  <h5>Geo Stationary satellite</h5>
+                  <div class="content_derivation">  
+                      <p>Followings are the essential features of geo stationary satellites.<br/>
+- Time period is same as time taken by earth to complete one rotation around own axis (T=24 hour).<br/>
+- It revolves round the earth in west to east direction in equatorial plane at a height of about 36,000km.<br/>
+- Its orbital velocity is nearly 3.1 km/sec.<br/>
+- Geo stationary satellite appears to be fixed at position above a certain place on the earth.
+
+</p>
+                    
+</div>
+
+
+                  <h5>Kepler's laws</h5>
+                  <div class="content_derivation">  
+                      <p>
+                      1) The planets describe an elliptical path about the sun as one focus.<br/>
+2) The line joining the sun and the planet sweeps out equal area is equal times.<br/>
+
+the squares of the periods of revolution of the planets are proportional to the cubes of their mean distance from sun.
+
+<br/>
+
+</p>
+
+</div>
+<div class="content_formula">
+<p><i class="mdi-formula green-text"> </i>
+$T^2 \propto r^3$
+</p>
+</div>
+<!-- <div style="content_interactive">
+<iframe src="http://galileoandeinstein.physics.virginia.edu/more_stuff/Applets/Kepler/kepler.html" width="100%" height="1200"></iframe>
+          </div>    -->       
+                    
+                            </div>
+                            </div>
+
+            </div>
+            <!--card stats end-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="divider"></div>
+          
+         
+          </div>
+        </div>
+        <!--end container-->
+
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START RIGHT SIDEBAR NAV-->
+      <aside id="right-sidebar-nav">
+        <ul id="chat-out" class="side-nav rightside-navigation">
+            <li class="li-hover">
+            <a href="app-widget.html#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+            <div id="right-search" class="row">
+                <form class="col s12">
+                    <div class="input-field">
+                        <i class="mdi-action-search prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Search</label>
+                    </div>
+                </form>
+            </div>
+            </li>
+            <li class="li-hover">
+                <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">just now</a>
+                                <p>Jim Doe Purchased new equipments for zonal office.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">Yesterday</a>
+                                <p>Your Next flight for USA will be on 15th August 2015.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">Last Week</a>
+                                <p>Jessy Jay open a new store at S.G Road.</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <a href="app-widget.html#">5 Days Ago</a>
+                                <p>Natalya Parker Send you a voice mail for next conference.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                    <div class="collapsible-body sales-repoart">
+                        <div class="sales-repoart-list  chat-out-list row">
+                            <div class="col s8">Target Salse</div>
+                            <div class="col s4"><span id="sales-line-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Payment Due</div>
+                            <div class="col s4"><span id="sales-bar-1"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Delivery</div>
+                            <div class="col s4"><span id="sales-line-2"></span>
+                            </div>
+                        </div>
+                        <div class="sales-repoart-list chat-out-list row">
+                            <div class="col s8">Total Progress</div>
+                            <div class="col s4"><span id="sales-bar-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                    <div class="collapsible-body favorite-associates">
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Eileen Sideways</p>
+                                <p class="place">Los Angeles, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Zaham Sindil</p>
+                                <p class="place">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Renov Leongal</p>
+                                <p class="place">Cebu City, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Weno Carasbong</p>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="favorite-associate-list chat-out-list row">
+                            <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                            </div>
+                            <div class="col s8">
+                                <p>Nusja Nawancali</p>
+                                <p class="place">Bangkok, Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </li>
+        </ul>
+      </aside>
+      <!-- LEFT RIGHT SIDEBAR NAV-->
+
+    </div>
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="http://themeforest.net/user/geekslabs/portfolio?ref=geekslabs" target="_blank">Phunka Technologies Pvt. Ltd.</a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://phunka.com/">Phunka Technologies Pvt. Ltd.</a></span>
+        </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+    <!-- chartjs -->
+    <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
+
+
+<!-- data-tables -->
+    <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>
+
+
+    <!-- sparkline -->
+    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
+
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+    
+
+    <!-- Added by sujit maharjan -->
+<script type="text/javascript" src="js/gravitation.js"></script>
+    <script type="text/javascript" src="mathjax/MathJax.js"></script>
+ <script type="text/javascript">
+    
+
+
+
+
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+
+      });
+
+    
+    </script>
+
+   <script type="text/javascript">
+                      function setCookie(cname, cvalue, exdays) {
+                            var d = new Date();
+                            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                            var expires = "expires="+d.toUTCString();
+                            document.cookie = cname + "=" + cvalue + "; " + expires;
+                        }
+
+                        function getCookie(cname) {
+                            var name = cname + "=";
+                            var ca = document.cookie.split(';');
+                            for(var i=0; i<ca.length; i++) {
+                                var c = ca[i];
+                                while (c.charAt(0)==' ') c = c.substring(1);
+                                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                            }
+                            return "";
+                        }
+
+                        function checkCookie() {
+                            var user = getCookie("username");
+                            if (user != "") {
+                                alert("Welcome again " + user);
+                            } else {
+                                user = prompt("Please enter your name:", "");
+                                if (user != "" && user != null) {
+                                    setCookie("username", user, 365);
+                                }
+                            }
+                        }
+                      var user_preferences = {};
+
+
+                      reload_content = function()
+                      {
+                        var show_derivations = getCookie("show_derivations") == "true";
+                        var show_formula = getCookie("show_formula")=="true";
+
+                        var show_interactive_contents = getCookie("show_interactive_contents")=="true";
+
+                        var show_shortcuts = getCookie("show_shortcuts")=="true";
+                        var show_mnemonics = getCookie("show_mnemonics")=="true";
+                        console.log(show_derivations);
+                        if(show_derivations)
+                        {
+                            show_formula = true;
+                            $(".content_derivation").css("display","block");
+                        }
+                        else
+                        {
+                            $(".content_derivation").css("display","none");
+                        }
+                        if(show_formula)
+                        {
+                            $(".content_formula").css("display","block");
+                        }
+                        else
+                        {
+                            $(".content_formula").css("display","none");
+                        }
+                        if(show_interactive_contents)
+                        {
+                            $(".content_interactive").css("display","block");
+                        }
+                        else
+                        {
+                            $(".content_interactive").css("display","none");
+                        }
+
+                        
+                      }
+                            $(".notes_setting").change(function(){
+                                var elem_id = $(this).attr("id");
+                                var elem_value = $(this).is(":checked");
+                                setCookie(elem_id,elem_value,365);
+                                reload_content();
+                            });
+                            $("document").ready(function(){
+                            var notes_setting_selectors = $(".notes_setting");
+                            for(var i = 0; i<notes_setting_selectors.length;i++)
+                            {
+                                var elem_id = $(notes_setting_selectors[i]).attr("id");
+                                var cookie_value = getCookie(elem_id);
+                                if(cookie_value == "")
+                                {
+                                    setCookie(elem_id,true,365);
+                                }
+                                else if(cookie_value=="false"){
+                                    $(notes_setting_selectors[i]).prop("checked",false);
+
+                                }
+                            }
+                            reload_content();
+
+                      });
+                      </script>
+<script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -33.8688, lng: 151.2195},
+    zoom: 13
+  });
+  var input = /** @type {!HTMLInputElement} */(
+      document.getElementById('pac-input'));
+
+  var types = document.getElementById('type-selector');
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
+
+  var autocomplete = new google.maps.places.Autocomplete(input);
+  autocomplete.bindTo('bounds', map);
+
+  var infowindow = new google.maps.InfoWindow();
+  var marker = new google.maps.Marker({
+    map: map,
+    anchorPoint: new google.maps.Point(0, -29)
+     
+  });
+
+ 
+
+
+  autocomplete.addListener('place_changed', function() {
+    infowindow.close();
+    marker.setVisible(false);
+    var place = autocomplete.getPlace();
+    if (!place.geometry) {
+      window.alert("Autocomplete's returned place contains no geometry");
+      return;
+    }
+
+    // If the place has a geometry, then present it on a map.
+    if (place.geometry.viewport) {
+      map.fitBounds(place.geometry.viewport);
+    } else {
+      map.setCenter(place.geometry.location);
+      map.setZoom(17);  // Why 17? Because it looks good.
+    }
+    marker.setIcon(/** @type {google.maps.Icon} */({
+      url: place.icon,
+      size: new google.maps.Size(71, 71),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(17, 34),
+      scaledSize: new google.maps.Size(35, 35)
+    }));
+    marker.setPosition(place.geometry.location);
+    marker.setVisible(true);
+
+    var address = '';
+    if (place.address_components) {
+      address = [
+        (place.address_components[0] && place.address_components[0].short_name || ''),
+        (place.address_components[1] && place.address_components[1].short_name || ''),
+        (place.address_components[2] && place.address_components[2].short_name || '')
+      ].join(' ');
+    }
+    loc = place.geometry.location;
+    var api_key = "AIzaSyAFkYy0c_-Op6MuSNx9IpGhknOXj3e5ZBs";
+    var request_url ="https://maps.googleapis.com/maps/api/elevation/json?locations="+loc.lat() +","+loc.lng()+"&key="+api_key;
+
+
+      elevator.getElevationForLocations({
+    'locations': [loc]
+  }, function(results, status) {
+    if (status === google.maps.ElevationStatus.OK) {
+      // Retrieve the first result
+      if (results[0]) {
+        var elevation = results[0].elevation;
+      
+    var g_val = 6.67 * Math.pow(10,-11) * 5.972 * Math.pow(10,24)/Math.pow(6371000+elevation,2);
+
+
+        infowindow.setContent('<div><strong>' 
+            + place.name 
+            + '</strong> <br>'
+            +address
+            +' <br><strong>Altitude : </strong>'
+            +elevation+'m<br><strong>g : </strong>'
+            + g_val
+            +"m/s^2</div>");
+        infowindow.open(map, marker);
+      } else {
+      }
+    } else {
+    }
+  });
+        
+
+    
+  });
+
+  // Sets a listener on a radio button to change the filter type on Places
+  // Autocomplete.
+  function setupClickListener(id, types) {
+    var radioButton = document.getElementById(id);
+    radioButton.addEventListener('click', function() {
+      autocomplete.setTypes(types);
+    });
+  }
+
+  elevator = new google.maps.ElevationService;
+
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&libraries=places&callback=initMap"
+        async defer></script>
+
+
+
+        <script type="text/javascript">
+var graph_data = {
+    labels : ["0","1/2R","R","2R","4R","6R", "8R","10R","12R", "14R","16R"],
+    datasets : [
+        {
+            label: "My dataset",
+            fillColor : "rgba(255,255,255,0)",
+            strokeColor : "#000",
+            pointColor : "#00796b ",
+            pointStrokeColor : "#fff",
+            pointHighlightFill : "#fff",
+            pointHighlightStroke : "rgba(255,0,0,1)",
+            data: [0, 4.9, 9.8, 2.45, 0.6125, 0.2722, 0.1531, 0.0981, 0.06805, 0.05,0.03828]
+        }
+    ]
+
+}
+    var lineChart = document.getElementById("content_variation_g").getContext("2d");
+        window.lineChart = new Chart(lineChart).Line(graph_data, {
+            scaleShowGridLines : true,///Boolean - Whether grid lines are shown across the chart        
+        scaleGridLineColor : "rgba(0,0,0)",//String - Colour of the grid lines        
+        scaleGridLineWidth : 1,//Number - Width of the grid lines       
+        scaleShowHorizontalLines: true,//Boolean - Whether to show horizontal lines (except X axis)     
+        scaleShowVerticalLines: false,//Boolean - Whether to show vertical lines (except Y axis)        
+        bezierCurve : true,//Boolean - Whether the line is curved between points        
+        bezierCurveTension : 0.4,//Number - Tension of the bezier curve between points      
+        pointDot : true,//Boolean - Whether to show a dot for each point        
+        pointDotRadius : 5,//Number - Radius of each point dot in pixels        
+        pointDotStrokeWidth : 2,//Number - Pixel width of point dot stroke      
+        pointHitDetectionRadius : 20,//Number - amount extra to add to the radius to cater for hit detection outside the drawn point        
+        datasetStroke : true,//Boolean - Whether to show a stroke for datasets      
+        datasetStrokeWidth : 3,//Number - Pixel width of dataset stroke     
+        datasetFill : true,//Boolean - Whether to fill the dataset with a colour                
+        animationSteps:15,// Number - Number of animation steps     
+        animationEasing: "easeOutQuart",// String - Animation easing effect         
+        tooltipTitleFontFamily: "'Roboto','Helvetica Neue', 'Helvetica', 'Arial', sans-serif",// String - Tooltip title font declaration for the scale label        
+        scaleFontSize: 12,// Number - Scale label font size in pixels       
+        scaleFontStyle: "normal",// String - Scale label font weight style      
+        scaleFontColor: "#000",// String - Scale label font colour
+        tooltipEvents: ["mousemove", "touchstart", "touchmove"],// Array - Array of string names to attach tooltip events       
+        tooltipFillColor: "rgba(0,0,0)",// String - Tooltip background colour     
+        tooltipTitleFontFamily: "'Roboto','Helvetica Neue', 'Helvetica', 'Arial', sans-serif",// String - Tooltip title font declaration for the scale label        
+        tooltipFontSize: 12,// Number - Tooltip label font size in pixels
+        tooltipFontColor: "#000",// String - Tooltip label font colour      
+        tooltipTitleFontFamily: "'Roboto','Helvetica Neue', 'Helvetica', 'Arial', sans-serif",// String - Tooltip title font declaration for the scale label        
+        tooltipTitleFontSize: 14,// Number - Tooltip title font size in pixels      
+        tooltipTitleFontStyle: "bold",// String - Tooltip title font weight style       
+        tooltipTitleFontColor: "#000",// String - Tooltip title font colour     
+        tooltipYPadding: 8,// Number - pixel width of padding around tooltip text       
+        tooltipXPadding: 16,// Number - pixel width of padding around tooltip text      
+        tooltipCaretSize: 10,// Number - Size of the caret on the tooltip       
+        tooltipCornerRadius: 6,// Number - Pixel radius of the tooltip border       
+        tooltipXOffset: 10,// Number - Pixel offset from point x to tooltip edge
+        responsive: true           
+        });
+</script>
+  </body>
+
+    
+</body>
+
+</html>
