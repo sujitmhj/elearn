@@ -287,8 +287,8 @@ or, F = $\frac{G m_1 m_2}{r^2}$
 </div>
 
 <div class="col s12">
-                    <div id="sapien1" class="col s12 white lighten-3 center" style="padding-top:20px;padding-bottom:20px;">
-                      <canvas id="myCanvas" width="800" height="200" style=";background:#ffffff;">
+                    <div id="sapien1" class="col s12 white lighten-3 center interactive-content-div">
+                      <canvas id="myCanvas" width="800" height="200" style=";background:#ffffff; padding-top:20px; padding-bottom:20px;">
                 Your browser does not support the HTML5 canvas tag.</canvas>
                 <div class="col s12">
                   <div class="col s3 offset-s2 input-field">
@@ -303,12 +303,12 @@ or, F = $\frac{G m_1 m_2}{r^2}$
                   </div>
 
                     </div>
-                    <div id="activeone1" class="col s12  white lighten-3">
+                    <div id="activeone1" class="col s12  white lighten-3 interactive-content-div" style="">
                     <h4>Questions</h4>
                       <p>1. Move the mass 1 (m1) and mass 2 (m2) to see how the value of gravitational force (F) varies with distance between m1 and m2.</p>
                         <p>2. Keep the distance between m1 and m2 constant, change mass of m1 and m2 and see how the gravitational force (F) changes.</p>
                     </div>
-                    <div id="vestibulum1" class="col s12  white lighten-3">
+                    <div id="vestibulum1" class="col s12  white lighten-3 interactive-content-div">
                       <p>m1 -> mass of object 1</p>
                       <p>m2 -> mass of object 2</p>
                       <p>d -> Distance between m1 and m2</p>
@@ -473,6 +473,65 @@ The earth is bulging at the equator and flattened at the poles. As varies invers
 </div>
 
                       <div class="content_interactive col s12 m12 l12" style="height:600px;">
+<div class="row">
+<div class="col s12" style="text-align:center;">
+<ul class="tabs tab-demo-active  z-depth-1 cyan">
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light active" href="ui-tabs.html#sapien1"><i class="mdi-image-slideshow"></i> Experiment</a>
+                      </li>
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light" href="ui-tabs.html#activeone1"><i class="mdi-action-accessibility"></i> Exercises</a>
+                      </li>
+                      <li class="tab col s3"><a class="white-text darken-1 waves-effect waves-light" href="ui-tabs.html#vestibulum1"><i class="mdi-action-help"></i> Help</a>
+                      </li>
+                    </ul>
+
+</div>
+
+<div class="col s12">
+                    <div id="sapien1" class="col s12 white lighten-3 center interactive-content-div">
+                      <canvas id="myCanvas" width="800" height="200" style=";background:#ffffff; padding-top:20px; padding-bottom:20px;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+                <div class="col s12">
+                  <div class="col s3 offset-s2 input-field">
+                  <h6>Mass 1 (m1) kg</h6>
+                  <input type="number" value="1000" class="input_mass" maxlength="6" id = "m1">
+                  </div>
+
+                  <div class="col s3 offset-s2 input-field">
+                  <h6>Mass 2 (m2)kg</h6>
+<input type="number" value="1000" class="input_mass" maxlength="6" id = "m2">
+                  </div>
+                  </div>
+
+                    </div>
+                    <div id="activeone1" class="col s12  white lighten-3 interactive-content-div" style="">
+                    <h4>Questions</h4>
+                      <p>1. Move the mass 1 (m1) and mass 2 (m2) to see how the value of gravitational force (F) varies with distance between m1 and m2.</p>
+                        <p>2. Keep the distance between m1 and m2 constant, change mass of m1 and m2 and see how the gravitational force (F) changes.</p>
+                    </div>
+                    <div id="vestibulum1" class="col s12  white lighten-3 interactive-content-div">
+                      <p>m1 -> mass of object 1</p>
+                      <p>m2 -> mass of object 2</p>
+                      <p>d -> Distance between m1 and m2</p>
+                      <p>F -> Gravitational force between m1 and m2</p>
+                      <a href="#">Still confused ?</a>
+                    </div>
+                  </div>
+
+
+
+
+<!-- <div class="col s1">
+              <a class="btn-floating btn-medium blue modal-trigger" href="#modal1">
+                <i class="mdi-action-help blue"></i>
+              </a>
+            </div> -->
+
+
+                  </div>
+
+
+
+                      
                        <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
     <div id="map" height="600"></div>

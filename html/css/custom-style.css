@@ -20,3 +20,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 	padding-bottom: 20px;
 }
 
+.interactive-content-div
+{
+	padding: .2em .25em .15em; border: solid 0.08em #eeeeee;  border-radius: .1em;
+}
